@@ -1,0 +1,29 @@
+{
+  "name": "webpack-remote",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@babel/preset-react": "7.16.7",
+    "babel-loader": "8.2.3",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "5.5.0",
+    "serve": "12.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "5.66.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.7.3"
+  },
+  "scripts": {
+    "dev": "npx webpack-cli serve",
+    "build": "webpack --mode production",
+    "serve": "serve dist -p 8002 --cors",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@uiw/react-codemirror": "^4.3.3",
+    "antd": "^4.18.5",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}
