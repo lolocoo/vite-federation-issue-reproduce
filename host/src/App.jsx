@@ -4,7 +4,7 @@ import './App.css'
 const Button = lazy(() => import('components/Button'))
 // const Code = lazy(() => import('components/Code'))
 
-const RemoteButton = React.lazy(() => import('webpack/Button'));
+// const RemoteButton = React.lazy(() => import('webpack/Button'));
 // const RemoteCode = React.lazy(() => import('webpack/Code'));
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
     <div className="App">
       <div>remote component demo</div>
       <Suspense fallback={'loading component'}>
-        <Button />
+        <div>host</div><Button />
         <br />
-        <RemoteButton />
+        {/* <RemoteButton /> */}
         {/* <RemoteCode /> */}
         {/* <Code /> */}
       </Suspense>
